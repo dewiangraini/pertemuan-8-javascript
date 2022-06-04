@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project JavaScript</title>
+</head>
+<body>
+
+	<SCRIPT language="JavaScript">
+	<!--
+	function cetak(){
+		var nama = (document.fform.iNama.value);
+		var nim = (document.fform.iNim.value);
+		var fakultas = (document.fform.iFakultas.value);
+		var prodi = (document.fform.iProdi.value);
+		var alamat = (document.fform.iAlamat.value);
+		
+		document.fform.oNama.value = nama
+		document.fform.oNim.value = nim
+		document.fform.oFakultas.value = fakultas
+		document.fform.oProdi.value = prodi
+		document.fform.oAlamat.value = alamat
+	}
+	function warna(pilihan){
+		alert("Anda Memilih Warna " + pilihan);
+		document.bgColor=pilihan;
+	}
+	//..>
+	</SCRIPT>
+
+	<form name="fform">
+		<table border="1" align="center" width="70%">
+
+			<tr id="baris1">
+				<td width="100%" colspan="2">
+					<img src="logouad.png" width="10%">
+					<h1 align="center">UNIVERSITAS AHMAD DAHLAN</h1>
+					<h2 align="center">PERGURUAN TINGGI MUHAMMADIYAH YOGYAKARTA</h2>
+				</td>
+			</tr>
+
+			<tr id="baris2">
+				<td width="50%"><h3 align="center">Input Kartu Mahasiswa</h3>
+					<pre>
+		Nama		:<input type="Test" size="20" name="iNama" onchange="document.getElementById('baris1')"><br>
+		Nim 		:<input type="Test" size="20" name="iNim" onchange="document.getElementById('baris1')"><br>
+		Fakultas	:<input type="Test" size="20" name="iFakultas" onchange="document.getElementById('baris2')"><br>
+		Prodi		:<input type="Test" size="20" name="iProdi" onchange="document.getElementById('baris2')"><br>
+		Alamat		:<input type="Test" size="20" name="iAlamat" onchange="document.getElementById('baris3')"><br>
+					</pre>
+
+			<td width="50%">
+				<h3 align="center">Output Kartu Mahasiswa</h3>
+					<pre>
+		Nama 		:<input type="Test" readonly size="20" name="oNama"><br>
+		Nim		:<input type="Test" readonly size="20" name="oNim"><br>
+		Fakultas	:<input type="Test" readonly size="20" name="oFakultas"><br>
+		Prodi		:<input type="Test" readonly size="20" name="oProdi"><br>
+		Alamat		:<input type="Test" readonly size="20" name="oAlamat"><br>
+					</pre>
+			</td>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100%" colspan="2">
+				<center>
+					<form>
+						<img name="coolfan" width=61 height=72><br><br>
+						<input type="button" value="Blue" onClick="warna('lightblue')">
+						<input type="button" value="Pink" onClick="warna('pink')"><br>
+						<input type=button value=" Aga " onClick="coolfan.src =	'Aga.JPEG'">
+						<input type=button value=" Dewi " onClick="coolfan.src = 'Dewi.JPG'"><br>
+					</form>	
+						<input type="button" value="Cetak" onclick="cetak()">
+						<INPUT TYPE="reset" value="Ulang">
+				</center>
+				</td>
+			</tr>
+	</form>
+</table>
+</body>
+</html>
